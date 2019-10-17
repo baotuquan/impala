@@ -436,6 +436,7 @@ public class KuduUtil {
       case INT16: return Type.SMALLINT;
       case INT32: return Type.INT;
       case INT64: return Type.BIGINT;
+      case BINARY: return Type.STRING;
       case STRING: return Type.STRING;
       case UNIXTIME_MICROS: return Type.TIMESTAMP;
       case DECIMAL:

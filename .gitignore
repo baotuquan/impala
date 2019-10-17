@@ -95,3 +95,7 @@ gdb.txt
 # Debugging
 ad-hoc.test
 nohup.out
+
+#
+install/
+toolchain

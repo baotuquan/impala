@@ -104,7 +104,7 @@ SET(CXX_FLAGS_DEBUG "${CXX_GCC_FLAGS} -ggdb -gdwarf-2")
 # -Werror: compile warnings should be errors when using the toolchain compiler.
 #   Enabled for DEBUG, ASAN, TSAN and UBSAN builds which are built pre-commit.
 SET(CXX_FLAGS_DEBUG "${CXX_FLAGS_DEBUG} -Werror")
-SET(CXX_FLAGS_RELEASE "${CXX_GCC_FLAGS} -O3 -DNDEBUG -gdwarf-2")
+SET(CXX_FLAGS_RELEASE "${CXX_GCC_FLAGS} -s -O3 -DNDEBUG -gdwarf-2")
 SET(CXX_FLAGS_ADDRESS_SANITIZER
   "${CXX_CLANG_FLAGS} -Werror -O1 -g -fsanitize=address -fno-omit-frame-pointer -DADDRESS_SANITIZER")
 
